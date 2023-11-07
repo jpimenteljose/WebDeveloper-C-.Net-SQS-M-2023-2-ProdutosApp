@@ -55,7 +55,7 @@ namespace ProdutosApp.Data.Repositories
         /// <summary>
         /// Método para consulta todos os produto no banco de dados
         /// </summary>
-        public List<Produto> GetAll(Produto produto)
+        public List<Produto> GetAll()
         {
             // abrindo conexão com o banco de dados
             using (var dataContext = new DataContext())
