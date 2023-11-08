@@ -19,7 +19,11 @@ namespace ProdutosApp.Data.Contexts
         /// </summary>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDProdutosApp;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            // banco local
+            //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDProdutosApp;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            
+            // banco servidor MyAsp.net
+            optionsBuilder.UseSqlServer(@"Data Source=SQL8006.site4now.net;Initial Catalog=db_aa12c8_bdprodutosapp;User Id=db_aa12c8_bdprodutosapp_admin;Password=Coti123@");
         }
 
         /// <summary>
